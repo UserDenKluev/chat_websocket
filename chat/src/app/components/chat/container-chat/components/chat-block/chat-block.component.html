@@ -1,0 +1,20 @@
+<div class="chat-block">
+  <div class="name-chat">
+    {{ name }}
+  </div>
+  <div class="message-chat">
+    <div>
+      @for (item of messages; track item) {
+        <div>
+          {{ item }}
+        </div>
+      }
+    </div>
+  </div>
+  <div class="send-message-chat">
+    <form [formGroup]="form" (submit)="submit()">
+      <input type="text" placeholder="Enter your message" formControlName="message"/>
+    </form>
+    <button (click)="submit()">Send</button>
+  </div>
+</div>

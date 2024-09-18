@@ -1,0 +1,25 @@
+:host{
+  display: block;
+  height: 100%;
+}
+
+.chat-block {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+
+  .name-chat {
+    border: 1px solid red;
+  }
+
+  .message-chat {
+    border: 1px solid blue;
+  }
+
+  .send-message-chat {
+    border: 1px solid green;
+  }
+}
+
+

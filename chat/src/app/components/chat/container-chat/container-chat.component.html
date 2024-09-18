@@ -1,0 +1,16 @@
+<div class="container-chat">
+  <div class="tools">
+    <app-chat-tools/>
+  </div>
+  <div class="chat-block">
+    <app-chat-block
+      [messages]="(messages$ | async)!"
+      (sendMessage)="sendMessage($event)"
+      (connectSocket)="connectSocket()"
+    >
+
+      <div class="fff">Loading...</div>
+      <div class="ddd">Анатолий...</div>
+    </app-chat-block>
+  </div>
+</div>
